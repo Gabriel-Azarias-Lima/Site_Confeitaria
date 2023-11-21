@@ -1,0 +1,931 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+/* ESTILO GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* ROLAGEM SUAVE */
+}
+
+body {
+    background-color: #ffcdd8;
+}
+
+.interface {
+    max-width: 1280px;
+    /* da um Espaço nas laterais */
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    /* define o flex para todas as div com a classe flex */
+}
+
+.btn-social i {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 23px;
+
+    transition: .3s;
+}
+
+.btn-social i:hover {
+    color: #ffcdd8;
+    transform: translateY(-5px);
+    /* Faz uma animação se subir para cima */
+}
+
+.btn-contato button {
+    padding: 5px 20px;
+    /* define a altura e largura do botão */
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: #ffcdd8;
+    color: #52230f;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 0px 0px 8px #ffcdd8;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+h2.titulo {
+    color: #52230f;
+    font-size: 2.5em;
+    line-height: 45px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wave{
+    display: flex;
+    margin-bottom: -5px;
+
+}
+
+.wave img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* header logo */
+.header-logo {
+    padding: 10px 8% 5px;
+    display: flex;
+    align-items: center;
+    background-color: #ffcdd8;
+}
+
+.header-logo img {
+    width: 140px;
+}
+
+
+
+
+/* ESTILOS DA BARRA DE NAVEGAÇÃO */
+
+header {
+    width: 100%;
+    padding: 15px 8%;
+    /* da uma altura no header dos menus */
+    background-color: #52230f;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
+
+header.menu-rolagem {
+    background-color: #000000b2;
+    backdrop-filter: blur(10px);
+    /* adicione o efeito desfoque */
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* deixa os elementos distantes */
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header .menu-desktop a {
+    font-size: .8em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: 0.4s;
+    position: relative;
+}
+
+header nav.menu-desktop a:hover {
+    color: #ffcdd8;
+}
+
+header nav.menu-desktop a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 60%;
+    height: 2px;
+    background: #ffcdd8;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+
+header nav.menu-desktop a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4;
+}
+
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 20px;
+    /* da uma largura entre os menus */
+}
+
+/* ESTILO BACKGROUND IMAGEM */
+
+.background-height {
+    height: 100vh;
+    z-index: -1;
+}
+
+.background-img {
+    inset: 0;
+}
+
+.container-topo-txt {
+    position: absolute;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.img-topo {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagem/img_topo_site2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    /* Garante que o conteúdo da topo-do-site não vaze para fora da div background-img */
+}
+
+
+/* ESTILO DO MENU MOBILE */
+
+.btn-abrir-menu {
+    display: none;
+}
+
+.btn-abrir-menu i {
+    color: #ffcdd8;
+    font-size: 30px;
+}
+
+.menu-mobile {
+    background-color: #3b3b3b12;
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-mobile.abrir-menu {
+    width: 100%;
+}
+
+.menu-mobile.abrir-menu~.overlay-menu {
+    display: block;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 8%;
+}
+
+.menu-mobile .btn-fechar i {
+    color: #ffcdd8;
+    font-size: 1.5em;
+}
+
+.menu-mobile nav ul {
+    text-align: center;
+}
+
+.menu-mobile nav ul li a {
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 30px 8%;
+    display: block;
+    transition: .5s;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #ffcdd8;
+    color: #000000;
+}
+
+.overlay-menu {
+    background-color: #00000091;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+
+/* ESTILO TOPO DO SITE */
+section.topo-do-site {
+    padding: 0 8%;
+    /* 40px é para um espaço na altura | utilzo 4% para o texto nao colar nas laterais ao ficar responsivo */
+}
+
+section.topo-do-site .txt_topo-site {
+    width: 100%;
+    max-width: 650px;
+
+}
+
+section.topo-do-site .txt_topo-site h1 {
+    color: #3dbbb7;
+    font-size: 3em;
+    line-height: 50px;
+}
+
+section.topo-do-site .txt_topo-site p {
+    padding: 10px 0 30px;
+    color: #ffffff;
+    font-size: 1.3em;
+}
+
+
+/* ESTILO SOBRE */
+
+section.sobre {
+    padding: 60px 8%;
+    /* 40px é para um espaço na altura | utilzo 4% para o texto nao colar nas laterais ao ficar responsivo */
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .img-sobre img {
+    width: 400px;
+}
+
+.sobre .txt-sobre p {
+    padding: 20px 0;
+    font-size: 1.3em;
+    color: #3a3a3a;
+    text-align: center;
+}
+
+
+
+/* ESTILO SERVIÇO */
+
+section.servicos {
+    padding: 60px 8%;
+    background-color: #52230f;
+    text-align: center;
+}
+
+section.servicos h2 {
+    color: #3dbbb7;
+}
+
+section.servicos .flex {
+    padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+}
+
+section.servicos .flex .cardapio-img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+section.servicos .flex .cardapio-img .overlay {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    /* Defina a largura como 100% para cobrir o elemento pai */
+    height: 100%;
+    /* Defina a altura como 100% para cobrir o elemento pai */
+    top: 0;
+    /* Alinhe o topo com o topo do elemento pai */
+    left: 0;
+    /* Alinhe a esquerda com a esquerda do elemento pai */
+    background-color: #00000062;
+    border-radius: 10px;
+}
+
+section.servicos .flex .cardapio-img .cardapio {
+    position: relative;
+    z-index: 2;
+}
+
+section.servicos .flex .cardapio-img .cardapio h3 {
+    padding: 0 0 10px;
+    font-size: 1.9em;
+    color: #ffffff;
+}
+
+section.servicos .flex .cardapio-img .cardapio .btn-ver button {
+    padding: 5px 10px;
+    /* define a altura e largura do botão */
+    font-size: 16px;
+    font-weight: 900;
+    background-color: #F1AE2B;
+    color: #52230f;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+section.servicos .flex .cardapio-img .cardapio .btn-ver button:hover {
+    box-shadow: 0px 0px 8px #F1AE2B;
+    transform: scale(1.05);
+}
+
+
+/* ESTILO AVALIAÇÕES */
+
+section.avaliacoes {
+    padding: 60px 8%;
+}
+
+section.avaliacoes .flex {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: #ffcdd8;
+    padding: 2rem;
+    max-width: 520px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.40);
+    transition: .2s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card-pessoas {
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+    gap: 1rem;
+}
+
+.card-pessoas .image {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 9999px;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.stars {
+    display: flex;
+    /* justify-content: center; */
+    grid-gap: 0.125rem;
+    gap: 0.125rem;
+    color: #3dbbb7;
+}
+
+.stars svg {
+    height: 1rem;
+    width: 1rem;
+}
+
+.name {
+    margin-top: 0.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgba(55, 65, 81, 1);
+}
+
+.message {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-top: 1rem;
+    color: rgba(107, 114, 128, 1);
+}
+
+
+/* ESTILO CONTATOS */
+
+section.contatos {
+    padding: 60px 8%;
+    background-color: #52230f;
+}
+
+section.contatos h2 {
+    color: #3dbbb7;
+}
+
+form .flex {
+    gap: 30px;
+}
+
+form .flex .label-input {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+form {
+    padding: 50px 0;
+    max-width: 900px;
+    /* faz o formulario ficar sempre com essa largura*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+form label {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+form label span {
+    color: #ff0000;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    /* remove a marcação ao clicar no formulario */
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 1em;
+}
+
+
+
+form input::placeholder {
+    color: #727272;
+}
+
+form textarea {
+    resize: none;
+    /* bloqueia o redimensionamento do textarea */
+    height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 150px;
+    background-color: #ffcdd8;
+    color: #52230f;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 0px 0px 8px #ffcdd8;
+}
+
+form .btn-enviar input:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+/* ESTILO DO RODAPÉ */
+footer {
+    padding: 60px 8% 20px;
+}
+
+footer .flex {
+    justify-content: center;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.flex .logo-footer img {
+    width: 140px;
+}
+
+footer .flex .btn-social a {
+    color: #52230f;
+    text-decoration: none;
+}
+
+footer .flex .btn-social i:hover {
+    color: #52230f;
+    transform: translateY(-5px);
+    /* Faz uma animação se subir para cima */
+}
+
+
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #52230f;
+}
+
+.borda .flex {
+    align-items: end;
+}
+
+.dados .icon-dados {
+    padding: 15px 0 0;
+}
+
+.dados .menu-desktop a {
+    color: #52230f;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: 0.4s;
+    position: relative;
+}
+
+.dados nav.menu-desktop a:hover {
+    color: #52230f;
+}
+
+.dados nav.menu-desktop a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 60%;
+    height: 2px;
+    background: #52230f;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+
+.dados nav.menu-desktop a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4;
+}
+
+
+.dados nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 20px;
+    /* da uma largura entre os menus */
+}
+
+
+
+
+footer .line-footer p i {
+    color: #52230f;
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+footer .line-footer p a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-copy {
+    padding-top: 50px;
+}
+
+.footer-copy .flex {
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-copy .flex p {
+    color: #52230f;
+}
+
+
+
+/* RESPONSIVIDADE INICIAL */
+
+@media screen and (max-width: 1100px) {
+
+    /* ESTILO GERAL */
+    .flex {
+        flex-direction: column;
+    }
+
+    /* MENU MOBILE */
+    .btn-abrir-menu {
+        display: block;
+    }
+
+    header .menu-desktop {
+        display: none;
+    }
+
+
+    /* SOBRE */
+
+    section.sobre .flex {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .sobre .img-sobre img {
+        width: 300px;
+    }
+
+
+    /* FOOTER */
+
+    .flex .logo-footer img {
+        padding-bottom: 20px;
+    }
+
+    footer .flex {
+        align-items: center;
+
+    }
+
+    .borda .flex {
+        align-items: center;
+        text-align: center;
+    }
+
+    .dados .menu-desktop {
+        padding-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .dados nav.menu-desktop ul li {
+        display: inline-block;
+        padding: 0 20px 10px;
+        /* da uma largura entre os menus */
+    }
+
+    .footer-copy {
+        padding-top: 30px;
+    }
+
+
+
+}
+
+
+/* RESPONSIVIDADE CELULARES */
+
+@media screen and (max-width: 725px) {
+
+    /* ESTILO GLOBAL */
+    h2.titulo {
+        font-size: 2em;
+    }
+
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site .txt_topo-site h1 {
+        font-size: 2.5em;
+    }
+
+    section.topo-do-site .txt_topo-site p {
+        font-size: 1.2em;
+        
+    }
+
+    /* ESTILO SOBRE */
+
+
+    .sobre .txt-sobre p {
+        font-size: 1.2em;
+        text-align: justify;
+
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+
+
+    /* HEADER LOGO */
+    .header-logo {
+        padding: 5px 8% 5px;
+    }
+
+    .header-logo img {
+        width: 100px;
+    }
+
+    /* HEADER */
+    header {
+        padding: 10px 8% 5px;
+    }
+
+    /* BTN SOCIAL */
+
+    .btn-social i {
+        font-size: 20px;
+    }
+
+
+    /* MENU MOBILE */
+
+    .btn-abrir-menu i {
+        font-size: 20px;
+    }
+
+
+    .menu-mobile .btn-fechar i {
+        font-size: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+    /* ESTILO GLOBAL */
+    h2.titulo {
+        font-size: 1.5em;
+    }
+
+    .btn-contato button {
+        padding: 5px 15px;
+        /* define a altura e largura do botão */
+        font-size: 17px;
+    }
+
+    /* ESTILO TOPO DO SITE */
+    section.topo-do-site .txt_topo-site h1 {
+        font-size: 1.5em;
+    }
+
+    section.topo-do-site .txt_topo-site p {
+        padding: 10px 0 20px;
+        font-size: 1.1em;
+    }
+
+    /* ESTILO SOBRE */
+
+
+    .sobre .txt-sobre p {
+        font-size: 1.1em;
+
+    }
+
+
+    /* ESTILO AVALIAÇÕES */
+    .card {
+        height: 100%;
+    }
+
+
+
+}
+
+
+/* RESPONSIVIDADE TELA DEITADA */
+
+@media (max-width: 1000px) and (orientation: landscape) {
+
+
+    /* HEADER LOGO */
+
+    .header-logo {
+        display: none;
+    }
+
+
+    /* MENI MOBILE */
+    
+
+    .menu-mobile nav ul li a {
+        color: #ffffff;
+        font-size: 1em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 10px 8%;
+        display: block;
+        transition: .5s;
+    }
+
+    /* TOPO DO SITE */
+    .container-topo-txt {
+        height: 80%;
+    }
+
+    section.topo-do-site .txt_topo-site h1 {
+        font-size: 2em;
+    }
+
+    section.topo-do-site .txt_topo-site p {
+        padding: 10px 0 10px;
+    }
+
+}
+
+@media (max-width: 568px) and (orientation: landscape){
+
+    /* TOPO DO SITE */
+    .container-topo-txt {
+        height: 80%;
+    }
+
+
+    section.topo-do-site .txt_topo-site p {
+        padding: 5px 0 10px;
+        
+    }
+}
+
+
+
+

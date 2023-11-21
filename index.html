@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS NATIVO -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JAVASCRIPT DO MENU -->
+    <script src="javascript/menu.js" defer></script>
+
+    <!-- LINK DOS ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bolos da Leia</title>
+
+    <link rel="shortcut icon" href="imagem/icon/fivicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="background-height" id="topo">
+
+
+
+        <div class="header-logo">
+            <div class="interface">
+                <a href="#"><img src="imagem/logo2.png" alt=""></a>
+            </div><!-- interface -->
+        </div> <!-- header-logo -->
+
+        <header>
+            <div class="interface">
+
+                <nav class="menu-desktop">
+                    <ul>
+                        <li><a href="#topo">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#contato">Fale Conosco</a></li>
+                    </ul>
+                </nav> <!-- menu-desktop -->
+
+                <div class="btn-abrir-menu" id="btn-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div><!-- btn-abrir-menu -->
+
+                <div class="menu-mobile" id="menu-mobile">
+
+                    <div class="btn-fechar">
+                        <i class="fa-solid fa-x"></i>
+                    </div><!-- btn-fechar -->
+
+                    <nav>
+                        <ul>
+                            <li><a href="#topo">Home</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#contato">Fale Conosco</a></li>
+                        </ul>
+                    </nav>
+
+                </div><!-- menu-mobile -->
+
+                <div class="btn-social">
+                    <a href="https://www.instagram.com/gabriel_azarias.lima/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://github.com/Gabriel-Azarias-Lima" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gabriel-azarias-de-lima-10ba61248" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div><!-- btn-social -->
+
+                <div class="overlay-menu" id="overlay-menu"></div>
+
+            </div>
+        </header>
+
+
+        <div class="background-img">
+
+            <div class="interface"> 
+            <div class="container-topo-txt">
+                <section class="topo-do-site">
+                    <div class="interface">
+                        <div class="txt_topo-site">
+                            <h1>Bolos e Doces Artesanais</h1>
+                            <p>Oferecemos uma ampla gama de bolos feitos artesanalmente, com um toque caseiro e sabores
+                                irresistíveis que encantam o gosto de todos.</p>
+    
+                            <div class="btn-contato">
+                                <a href="#"><button>Faça seu Pedido</button></a>
+                            </div> <!-- btn-contato -->
+    
+                        </div><!-- txt-topo-site -->
+                    </div><!-- interface -->
+                </section> <!-- topo-do-site -->
+
+            </div>
+        </div>
+
+            <div class="img-topo">
+
+            </div>
+            
+
+        </div> <!-- background -->
+
+    </div>
+
+    <main>
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <picture>
+                            <source media="(max-width: 1100px)" srcset="imagem/img_site/chefe_responsivo.png"
+                                type="image/png">
+                            <img src="imagem/img_site/chefe.png" alt="">
+                        </picture>
+
+                    </div><!-- img-sobre -->
+
+                    <div class="txt-sobre">
+                        <h2 class="titulo">Sobre Nós</h2>
+
+                        <p>Somos uma confeitaria especializada em bolos e doces caseiros, e estamos constantemente
+                            aprimorando nossos sabores de recheio e modelos temáticos para atender às suas preferências.
+                            Sabemos que você aprecia essa variedade, não é mesmo? Por isso, disponibilizamos uma ampla
+                            gama de opções, todas desenvolvidas por nossos experientes confeiteiros, que dedicam paixão
+                            e expertise para criar delícias que encantam através dos nossos serviços.
+                        </p>
+
+                    </div><!-- txt-sobre -->
+                </div><!-- flex -->
+            </div><!-- interface -->
+        </section><!-- sobre -->
+
+        <div class="wave">
+            <img src="imagem/wave.png" alt="">
+        </div>
+
+        <section class="servicos" id="servicos">
+            
+            <h2 class="titulo">Conheça Nossos Serviços</h2>
+            <div class="interface">
+                <div class="flex">
+
+                    <div class="cardapio-img" style="background-image: url(imagem/img_site/bolos.jpg);">
+                        <div class="cardapio">
+                            <h3>Bolos</h3>
+
+                            <div class="btn-ver">
+                                <a href="pagina_bolos.html"><button>Ver mais</button></a>
+                            </div> <!-- btn-contato -->
+                        </div><!-- cardapio -->
+                        <div class="overlay"></div>
+                    </div><!-- cardapio-img -->
+
+                    <div class="cardapio-img" style="background-image: url(imagem/img_site/doces.jpg);">
+                        <div class="cardapio">
+                            <h3>Doces</h3>
+
+                            <div class="btn-ver">
+                                <a href="pagina_doces.html"><button>Ver mais</button></a>
+                            </div> <!-- btn-contato -->
+                        </div><!-- cardapio -->
+                        <div class="overlay"></div>
+                    </div><!-- cardapio-img -->
+
+
+                    <div class="cardapio-img" style="background-image: url(imagem/img_site/Natal.jpg);">
+                        <div class="cardapio">
+                            <h3>Eventos</h3>
+
+                            <div class="btn-ver">
+                                <a href="pagina_eventos.html"><button>Ver mais</button></a>
+                            </div> <!-- btn-contato -->
+                        </div><!-- cardapio -->
+                        <div class="overlay"></div>
+                    </div><!-- cardapio-img -->
+
+
+                </div><!-- flex -->
+            </div><!-- interface -->
+            <div class="btn-contato">
+                <a href="#formulario"><button>Quero pedir agora</button></a>
+            </div> <!-- btn-contato -->
+        </section><!-- servico -->
+
+
+        <section class="avaliacoes">
+            <h2 class="titulo">Depoimentos</h2>
+            <div class="interface">
+                <div class="flex">
+
+                    <div class="card">
+                        <div class="card-pessoas">
+                            <div class="image" style="background-image: url(imagem/perfil_avaliações/pessoa1.jpg);">
+                            </div>
+                            <div>
+                                <div class="stars">
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="name">Martha Rodrigues</p>
+                            </div>
+                        </div>
+
+                        <p class="message">
+                            Nossa festa foi um sucesso graças aos incríveis bolos e doces da confeitaria! O sabor e a
+                            apresentação dos produtos eram impecáveis.
+                        </p>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-pessoas">
+                            <div class="image" style="background-image: url(imagem/perfil_avaliações/pessoa2.jpg);">
+                            </div>
+                            <div>
+                                <div class="stars">
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="name">Mateus Ferreira</p>
+                            </div>
+                        </div>
+
+                        <p class="message">
+                            Essa confeitaria é simplesmente fenomenal! Os bolos temáticos que eles criaram para a festa
+                            do meu filho eram lindos e deliciosos.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-pessoas">
+                            <div class="image" style="background-image: url(imagem/perfil_avaliações/pessoa3.jpg);">
+                            </div>
+                            <div>
+                                <div class="stars">
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="name">Martha Rodrigues</p>
+                            </div>
+                        </div>
+
+                        <p class="message">
+                            Sou fã de bolos e doces caseiros, e finalmente encontrei meu lugar favorito. A confeitaria
+                            oferece uma variedade incrível de sabores e designs.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section><!-- avaliacoes -->
+
+
+        <div class="wave">
+            <img src="imagem/wave.png" alt="">
+        </div>
+
+        <section class="contatos" id="contato">
+            <h2 class="titulo">Fale Conosco</h2>
+            <div class="interface">
+
+                <form method="post" action="">
+
+                    <div class="flex">
+                        <div class="label-input">
+                            <label for="nome-box">Nome: <span>*</span></label>
+                            <input type="text" name="nome" id="nome-box" placeholder="Seu nome:" required>
+                        </div>
+
+                        <div class="label-input">
+                            <label for="email-box">E-mail: <span>*</span></label>
+                            <input type="text" name="email" id="email-box" placeholder="Seu e-mail:" required>
+                        </div>
+                    </div>
+
+                    <label for="mensagem-box">Mensagem: <span>*</span></label>
+                    <textarea name="mensagem" id="mensagem-box" placeholder="Sua mensagem" required></textarea>
+
+                    <div class="btn-enviar">
+                        <input type="submit" value="ENVIAR">
+                    </div><!-- btn-enviar -->
+
+                </form>
+
+            </div><!-- interface -->
+        </section><!-- contatos -->
+
+    </main>
+
+
+    <footer>
+        <div class="interface">
+
+            <div class="line-footer">
+
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="imagem/logo2.png" alt="">
+                    </div><!-- logo-footer -->
+
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/gabriel_azarias.lima/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://github.com/Gabriel-Azarias-Lima" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/gabriel-azarias-de-lima-10ba61248" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div><!-- btn-social -->
+                </div><!-- flex -->
+
+            </div><!-- line-footer -->
+
+            <div class="line-footer borda">
+
+                <div class="flex">
+                    <div class="dados">
+                        <p class="icon-dados"><i class="fa-solid fa-location-dot"></i> <a href="#">Rua Agenor Silva, 200
+                                - Ribeirão Preto - SP</a></p>
+
+                        <p class="icon-dados"><i class="fa-regular fa-calendar-days"></i>Segunda a Sexta - das 10:00 as
+                            17:00</p>
+                    </div>
+
+                    <div class="dados">
+
+                        <nav class="menu-desktop">
+                            <ul>
+                                <li><a href="#topo">Home</a></li>
+                                <li><a href="#sobre">Sobre</a></li>
+                                <li><a href="#servicos">Serviços</a></li>
+                                <li><a href="#contato">Fale Conosco</a></li>
+                            </ul>
+                        </nav> <!-- menu-desktop -->
+                        
+                    </div>
+
+
+                </div>
+            </div><!-- line-footer -->
+
+        </div><!-- interface -->
+
+        <div class="footer-copy">
+            <div class="interface">
+                <div class="flex">
+                    <p>©2023 por Gabriel Azarias.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    
+
+</body>
+
+</html>

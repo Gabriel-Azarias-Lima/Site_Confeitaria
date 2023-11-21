@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+/* ESTILO GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+body {
+    background-color: #ffcdd8;
+}
+
+.interface {
+    max-width: 1280px;
+    /* da um Espaço nas laterais */
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    /* define o flex para todas as div com a classe flex */
+}
+
+
+/* ESTILO VARIEDADES */
+
+.container-variedades{
+    padding: 0 8%;
+}
+
+.container-variedades h1{
+    padding: 60px 0 35px;
+    line-height: 45px;
+    font-size: 2.5em;
+    color: #52230f;
+    text-transform: uppercase;
+    text-align: center;
+    
+
+}
+
+.container-border{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border{
+    width: 600px;
+    border-bottom:  4px solid #52230f;
+}
+
+.cards{
+    padding: 25px;
+    background-color: #52230f;
+    border-radius: 15px;
+    transition: .2s;
+}
+
+.cards:hover{
+    transform: scale(1.05);
+}
+
+.cards .flex{
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards .flex .img img{
+    width: 540px;
+    border-radius: 15px;
+}
+
+.cards .flex .variedades-txt{
+    text-align: center;
+}
+
+.cards .flex .variedades-txt h3{
+    font-size: 2.5em;
+    color: #3dbbb7;
+}
+
+.cards .flex .variedades-txt p{
+    padding: 20px;
+    font-size: 1.3em;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+
+.container-variedades .interface{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* ESTILO CONTATO */
+.contato{
+    padding: 60px 8% 50px;
+    text-align: center;
+}
+
+.contato h2{
+    font-size: 2.5em;
+    line-height: 45px;
+    color: #52230f;
+}
+
+.contato .btn-contato{
+    padding-top: 20px;
+}
+
+.btn-contato button{
+    padding: 5px 20px;
+    /* define a altura e largura do botão */
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: #F1AE2B;
+    color: #52230f;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+ .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #F1AE2B;
+    transform: scale(1.05);
+}
+
+
+/* ESTILO MAIS SABORES */
+
+.mais-sabores{
+    padding: 40px 8%;
+    text-align: center;
+}
+
+.mais-sabores .flex{
+    margin-bottom: 50px;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.mais-sabores .card-mais-sabores{
+    transition: .2s;
+}
+
+.mais-sabores .card-mais-sabores:hover{
+    transform: scale(1.05);
+}
+
+.mais-sabores .card-mais-sabores img{
+    width: 350px;
+    border-radius: 15px;
+}
+
+
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1130px){
+
+    /* ESTILO VARIEDADES */
+
+    .cards .flex{
+        flex-direction: column;
+    }
+
+    .cards .flex .img img{
+        width: 100%;
+    }
+
+    .cards .flex .variedades-txt p{
+        padding: 20px 0;
+    }
+
+
+    /* ESTILO MAIS SABORES */
+
+    .mais-sabores .card-mais-sabores img{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 486px){
+
+    /* ESTILO VARIEDADES */
+
+    .container-variedades h1{
+        font-size: 2em;   
+    }
+
+    .cards .flex .variedades-txt h3{
+        font-size: 1.5em;
+    }
+
+    .cards .flex .variedades-txt p{
+        font-size: 1em;
+    }
+
+
+    /* ESTILO MAIS SABORES */
+
+    .contato h2{
+        font-size: 2em;
+    }
+
+}
